@@ -1,0 +1,28 @@
+slug: weekly-status-updates
+title: Weekly Status Updates
+module: 01-what-to-implement-first
+tier: free
+skill_ready: true
+status: drafting
+version: "1.0.0"
+sku: free
+invocation_examples:
+  - "Turn these vendor portal notes into this week's status update, week 12"
+  - "Our build is on time but we are waiting on a vendor with no date. Are we green or yellow?"
+  - "Is this status update ready to send to the stakeholder list?"
+test_prompts:
+  - kind: happy path
+    prompt: "Write the week 7 status update for the checkout redesign, week ending 02/15/2026. Goal is to ship the new checkout by 04/30/2026. Payment integration finished 02/11 and cart logic is done. We are waiting on legal to approve the refund copy, Tom is chasing it, no date yet."
+    passes_when: "A Mode A update calling yellow rather than green, because the legal approval is an unscheduled dependency even though the team's own work is on schedule. The call carries a revised date of not yet known plus what has to happen before one can be set, and one sentence of justification naming the legal approval specifically rather than the project's general condition. Tom stays named. The links list is the final element with nothing after it. No em dashes, en dashes, curly quotes, ellipses, or a doubled ASCII hyphen standing in for a dash anywhere in the artifact or the reply around it."
+  - kind: messy input
+    prompt: "Update on the checkout project. We spent most of the week on the refund flow and made solid progress. Legal says they will get to it soon. Should still be fine for launch. Nobody owns the rollback plan yet."
+    passes_when: "An artifact is produced rather than a clarifying question, because the project and the week can be labeled and assumed. Effort language becomes position or a labeled unknown rather than being reported as progress. Soon becomes a date or a labeled gap. The rollback plan carries Owner unassigned in the owner position rather than being assigned to a job function or dropped. The status is not green, and where the inputs cannot support any call it reads Status call needed and names exactly what has to be known. The assumed project name is labeled where it sits rather than presented as a reported value, and any assumed week-ending date is both labeled and consistent with the week number it appears beside rather than defaulting to the current week. No working or step commentary before the artifact and nothing after the links list. No count of the update's own gaps and no sentence characterizing how complete it is, in the artifact or around it. No em dashes, en dashes, curly quotes, ellipses, or a doubled ASCII hyphen standing in for a dash."
+  - kind: near miss
+    prompt: "Write my weekly update to my manager about what I worked on this week. I was on the checkout redesign, payment integration is done, and I helped out with the refund copy."
+    passes_when: "Declines the personal-update framing without softening it, and produces the checkout redesign's position against its plan from the inputs supplied, offered outright rather than conditioned on the user agreeing. Routes the person-or-team week to 3ps-framework by name, stated whether or not that skill is installed. No em dashes, en dashes, curly quotes, ellipses, or a doubled ASCII hyphen standing in for a dash in the reply, including the declining part."
+sources:
+  - "Course script, structured generation. The eight-part update structure, the status color legend with the dates each color requires, and a worked project example."
+  - "Course script, plain-language generation. Recovered the mobile-reader framing, the rule that the overview assumes no prior knowledge every week, and the definition of green as every part on schedule with every dependency identified and scheduled, which the structured rewrite had shortened to on track."
+  - "Reference memo, earliest generation. The same structure carrying its original organizational context, none of which is carried into the skill."
+changelog:
+  - "1.0.0: initial conversion from course sources"

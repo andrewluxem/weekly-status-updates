@@ -1,0 +1,14 @@
+{
+  "name": "weekly-status-updates",
+  "owner": { "name": "Andrew Luxem" },
+  "description": "weekly-status-updates, position against the plan instead of effort",
+  "plugins": [
+    {
+      "name": "weekly-status-updates",
+      "source": "./",
+      "description": "Three modes ending in a working document: Weekly Status Update, Status Call, Draft Check. Static: no network calls, no remote fetch, no auto-update. Version-pinned.",
+      "category": "productivity",
+      "tags": ["status-update", "project-status", "rag-status", "reporting"]
+    }
+  ]
+}
