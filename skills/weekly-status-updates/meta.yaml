@@ -4,7 +4,7 @@ module: 01-what-to-implement-first
 tier: free
 skill_ready: true
 status: drafting
-version: "1.0.0"
+version: "1.0.1"
 sku: free
 invocation_examples:
   - "Turn these vendor portal notes into this week's status update, week 12"
@@ -19,10 +19,11 @@ test_prompts:
     passes_when: "An artifact is produced rather than a clarifying question, because the project and the week can be labeled and assumed. Effort language becomes position or a labeled unknown rather than being reported as progress. Soon becomes a date or a labeled gap. The rollback plan carries Owner unassigned in the owner position rather than being assigned to a job function or dropped. The status is not green, and where the inputs cannot support any call it reads Status call needed and names exactly what has to be known. The assumed project name is labeled where it sits rather than presented as a reported value, and any assumed week-ending date is both labeled and consistent with the week number it appears beside rather than defaulting to the current week. No working or step commentary before the artifact and nothing after the links list. No count of the update's own gaps and no sentence characterizing how complete it is, in the artifact or around it. No em dashes, en dashes, curly quotes, ellipses, or a doubled ASCII hyphen standing in for a dash."
   - kind: near miss
     prompt: "Write my weekly update to my manager about what I worked on this week. I was on the checkout redesign, payment integration is done, and I helped out with the refund copy."
-    passes_when: "Declines the personal-update framing without softening it, and produces the checkout redesign's position against its plan from the inputs supplied, offered outright rather than conditioned on the user agreeing. Routes the person-or-team week to 3ps-framework by name, stated whether or not that skill is installed. No em dashes, en dashes, curly quotes, ellipses, or a doubled ASCII hyphen standing in for a dash in the reply, including the declining part."
+    passes_when: "Declines the personal-update framing without softening it, and produces the checkout redesign's position against its plan from the inputs supplied, offered outright rather than conditioned on the user agreeing. Routes the person-or-team week to 3ps-framework, and the literal string 3ps-framework appears in the reply, whether or not that skill is installed. Routing in spirit, by describing a sibling without naming it, fails: the name is the deliverable on this half of the boundary, and it is what a user needs to go install. The split is the subject, so the reply distinguishes a person's or a team's week in Progress, Plans, and Problems from one project's position against its plan and its date rather than pointing at the phrasing the user chose. No em dashes, en dashes, curly quotes, ellipses, or a doubled ASCII hyphen standing in for a dash in the reply, including the declining part."
 sources:
   - "Course script, structured generation. The eight-part update structure, the status color legend with the dates each color requires, and a worked project example."
   - "Course script, plain-language generation. Recovered the mobile-reader framing, the rule that the overview assumes no prior knowledge every week, and the definition of green as every part on schedule with every dependency identified and scheduled, which the structured rewrite had shortened to on track."
   - "Reference memo, earliest generation. The same structure carrying its original organizational context, none of which is carried into the skill."
 changelog:
+  - "1.0.1: Related skills now names all five Module 01 siblings. Added weekly-schedule-of-meetings for the week the update is written into, and aligned the 3ps-framework descriptor with the subject rule. The near-miss bar now requires the literal string 3ps-framework in the reply and states the split as the subject rather than the phrasing"
   - "1.0.0: initial conversion from course sources"

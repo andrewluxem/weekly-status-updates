@@ -30,8 +30,10 @@ the answer is not the one they want.
 Hand off rather than duplicate when these are installed. `4-blocker-business-reviews`
 when the subject is a business area's full weekly picture with metrics and a
 recurring review meeting, rather than one project against one date.
-`3ps-framework` when the update is a person's or team's week in Progress, Plans
-and Problems rather than a project's position against its plan.
+`3ps-framework` when the update is a person's or a team's week in Progress,
+Plans, and Problems rather than one project's position against its plan and its
+date. `weekly-schedule-of-meetings` for designing the week this update is written
+into, including the day it is due and the meeting it feeds.
 `successful-meetings` for the meeting the update might replace, and for the
 follow-up note after it. `silent-meetings` when the update has grown into a
 document a room needs to read together. `business-writing` for a general prose

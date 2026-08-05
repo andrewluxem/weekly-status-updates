@@ -72,7 +72,7 @@ Naming the skill is the reliable path: `use the weekly-status-updates skill to d
 
 ## Where it hands off
 
-`4-blocker-business-reviews` when the subject is a business area's full weekly picture with metrics and a recurring review meeting, rather than one project against one date. `3ps-framework` when the update is a person's or team's week in Progress, Plans and Problems. `successful-meetings` for the meeting the update might replace. `silent-meetings` when the update has grown into a document a room needs to read together.
+`4-blocker-business-reviews` when the subject is a business area's full weekly picture with metrics and a recurring review meeting. `3ps-framework` when the update is a person's or a team's week in Progress, Plans, and Problems, rather than one project's position against its plan and its date. `weekly-schedule-of-meetings` for designing the week this update is written into, including the day it is due. `successful-meetings` for the meeting the update might replace. `silent-meetings` when the update has grown into a document a room needs to read together.
 
 ## Iterating
 

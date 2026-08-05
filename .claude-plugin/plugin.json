@@ -1,6 +1,6 @@
 {
   "name": "weekly-status-updates",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The weekly project status update a stakeholder can act on from their phone. Three artifacts: a Weekly Status Update built from raw notes, a Status Call with its justification and required dates, and a Draft Check with a verdict. Static: no network calls, no remote fetch, no auto-update.",
   "author": {
     "name": "Andrew Luxem"
