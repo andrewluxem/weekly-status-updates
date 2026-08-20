@@ -8,7 +8,7 @@ Three artifacts:
 - **Status Call**: the color underneath the update, worked through the tests in order, with the dates that color commits to and one sentence of justification naming the specific part of the goal that is off schedule.
 - **Draft Check**: an update scored line by line starting with the status call, with a verdict of ready to send, one pass needed, or not ready, and one sentence naming the single most important thing to fix.
 
-It executes the [Weekly Status Updates playbook](https://andrewluxem.com/playbooks/weekly-status-updates) from andrewluxem.com. The playbook page teaches the framework. This skill runs it.
+It executes the [Weekly Status Updates playbook](https://www.andrewluxem.com/playbooks/weekly-status-updates) from andrewluxem.com. The playbook page teaches the framework. This skill runs it.
 
 **Static by construction: no network calls, no remote fetch, no auto-update, nothing scheduled, no background behavior. Model-invocable by design: an agent may pick it up when you ask for a weekly status update or a project status, and naming the skill is the reliable path.** It reads nothing outside its own folder, never edits your global agent config, and never updates itself in place. The whole thing is one `SKILL.md` you can read in five minutes, plus templates and reference files it loads only when a step needs them.
 
@@ -56,7 +56,7 @@ Then invoke it by name when you want it for certain: `use the weekly-status-upda
 
 The skill lives under `skills/weekly-status-updates/`, which is where a plugin looks by default, so `plugin.json` declares no `skills` key. The frontmatter `name` field is what the skill is called once installed, whatever the install directory happens to be. `plugin.json` carries an explicit `version`. Installing pins that version. It does not silently pull new commits. Taking an update means bumping the version and reinstalling, so the update is a decision rather than a background event.
 
-**As a zip:** the packaged skill is on the playbook page at [andrewluxem.com/playbooks/weekly-status-updates](https://andrewluxem.com/playbooks/weekly-status-updates), for platforms that want a folder upload instead of a clone. Same files.
+**As a zip:** the packaged skill is on the playbook page at [andrewluxem.com/playbooks/weekly-status-updates](https://www.andrewluxem.com/playbooks/weekly-status-updates), for platforms that want a folder upload instead of a clone. Same files.
 
 Portable by design: it is plain Markdown with no runtime, so it works anywhere a folder of skill files works.
 
@@ -96,3 +96,9 @@ Tested on Claude Code. The three prompts in `meta.yaml` were run against this ve
 ## License
 
 MIT, see [`LICENSE`](LICENSE). The skill folder carries the same MIT text in [`skills/weekly-status-updates/LICENSE.md`](skills/weekly-status-updates/LICENSE.md), so the whole repository is one license.
+
+---
+
+## More playbooks
+
+This skill packages one playbook from the free library at [github.com/andrewluxem/playbooks](https://github.com/andrewluxem/playbooks). Every playbook is free to read, with no email required.
