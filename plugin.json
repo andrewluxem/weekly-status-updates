@@ -1,0 +1,41 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "weekly-status-updates",
+  "version": "1.0.1",
+  "description": "Write the weekly project status update your stakeholder can act on from their phone. RAG status calls with justification, revised dates for slipping projects, draft checks.",
+  "author": {
+    "name": "Some Luck Productions LLC",
+    "url": "https://andrewluxem.com"
+  },
+  "homepage": "https://github.com/andrewluxem/weekly-status-updates",
+  "repository": "https://github.com/andrewluxem/weekly-status-updates",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Weekly Status Updates",
+        "shortDescription": "Weekly status, RAG calls",
+        "longDescription": "Turns raw project notes into the weekly status update a stakeholder can read and act on from their phone, reporting progress instead of effort. Makes the green, yellow, or red call with its justification, checks dependencies, and attaches the revised date a slipping project commits to. Before you send, the Draft Check returns a verdict on whether the update is ready. Built from the Weekly Status Updates playbook at andrewluxem.com. Static skill: no network calls.",
+        "developerName": "Some Luck Productions LLC",
+        "category": "Productivity",
+        "capabilities": [
+          "Weekly status updates from raw project notes",
+          "Green, yellow, red status calls with justification and revised dates",
+          "Draft checks with a ready-to-send verdict"
+        ],
+        "websiteURL": "https://github.com/andrewluxem/weekly-status-updates",
+        "supportURL": "https://github.com/andrewluxem/weekly-status-updates/issues",
+        "privacyPolicyURL": "https://andrewluxem.com/plugins/privacy",
+        "defaultPrompt": [
+          "Turn my project notes into a weekly status update",
+          "Is this project green or yellow?",
+          "Is this status update ready to send?"
+        ],
+        "brandColor": "#8A4B14",
+        "brandColorDark": "#F2B27A",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}
