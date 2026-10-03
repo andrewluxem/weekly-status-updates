@@ -60,6 +60,8 @@ The skill lives under `skills/weekly-status-updates/`, which is where a plugin l
 
 Portable by design: it is plain Markdown with no runtime, so it works anywhere a folder of skill files works.
 
+Also available as a ChatGPT plugin (OpenAI plugin directory, in review).
+
 ## Usage
 
 ```
