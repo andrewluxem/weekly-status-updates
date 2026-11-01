@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/banner.svg" alt="weekly-status-updates: A portable agent skill for weekly project status updates: position against the plan, a status call that checks dependencies, and a draft check with a verdict."></p>
+
 # weekly-status-updates
 
 A small, static agent skill for the weekly project status update. Ask it for one thing and it hands back a working document, not advice about reporting.
